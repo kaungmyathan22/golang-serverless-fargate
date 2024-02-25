@@ -7,5 +7,5 @@ func main() {
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.JSON(map[string]string{"message": "Hello world"})
 	})
-	app.Listen(":3000")
+	app.Listen(":80")
 }
